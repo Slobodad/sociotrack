@@ -1,0 +1,23 @@
+// Grid
+
+.container {
+    width: 1500px;
+
+    @include mq(desktop-wide, max) {
+        width: 100%;   
+    }
+
+}
+
+.row {
+    display: flex;
+    padding: 0 30px;
+
+    @include mq(desktop, max) {
+        padding: 0;  
+    }
+
+    @include mq(tablet-wide, max) {
+        padding: 0;   
+    }
+}

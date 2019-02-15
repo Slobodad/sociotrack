@@ -1,0 +1,49 @@
+// Footer
+
+.footer {
+    
+
+    &__container {
+        width: 170px;
+        margin: 0 30px;
+        padding-top: 22px;
+        border-top: 1px solid rgba(0, 0, 0, 0.07);
+    }
+
+    &__link {
+        font-size: 12px;
+        text-decoration: none;
+        color: #147A42;
+
+        &:active {
+            text-decoration: underline;
+        }
+    }
+}
+
+.first__row {
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: center;
+
+    a {
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.second__row {
+    display: flex;
+    justify-content: center;
+
+    a {
+        margin-right: 32px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

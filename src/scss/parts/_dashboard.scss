@@ -1,0 +1,318 @@
+// Dashboard
+
+.main {
+
+    &__sidebar {
+        width: 240px;
+        background: linear-gradient(180deg, #27B983 -18.15%, #91E857 266.75%);
+        box-shadow: inset -1px 0px 0px rgba(28, 175, 94, 0.1);
+    }
+
+    &__dashboard {
+        background: #eff7ed;
+    }
+}
+
+.profile {
+    margin-bottom: 43px;
+    &__box{
+        display: flex;
+
+        padding: 39px 43px 39px 30px;
+    }
+
+    &__info {
+        padding-left: 10px;
+        align-self: center;
+    }
+
+    &__title {
+        font-size: 14px;
+        color: $color_white;
+    }
+
+    &__followers {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.3);
+    }
+        
+}
+
+.sidebar {
+
+    &__menu {
+        margin-bottom: 375px;
+
+        @include mq(tablet-wide, max) {
+            margin-bottom: 45px;   
+        }
+    }
+
+    &__list{
+        list-style: none;
+        margin: 0 20px;
+    }
+
+    &__item {
+        width: 200px;
+
+        &:hover {
+            background: #43c38d;
+        }
+    }
+
+    &__btn {
+        width: 200px;
+        padding: 12px 0 21px 58px;
+        position: relative;
+        font-style: 14px;
+        font-weight: 400;
+        border: none;
+        color: $color_white;
+        background: none;
+
+        &:active {
+           color:  #000; 
+        }
+
+
+        svg {
+            
+            position: absolute;
+            left: 22px;
+        }
+    }
+
+
+}
+
+.dashboard {
+    padding: 68px 125px 130px;
+
+    @include mq(desktop, max) {
+        padding: 68px 65px 130px;   
+    }
+
+    @include mq(tablet-wide, max) {
+        padding: 30px 65px 70px;  
+    }
+
+    @include mq(tablet, max) {
+        padding: 30px 40px 70px;   
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        color: #1CAF5E;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: lowercase;
+    }
+
+    &__btn {
+        width: 154px;
+        height: 40px;
+        font-size: 14px;
+        border: 1px solid #1CAF5E;
+        border-radius: 4px;
+        background: none;
+
+        &:hover {
+            color: $color_white;
+            background-color: #1CAF5E;
+        }
+
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__date {
+        height: 50px;
+    }
+}
+
+.date {
+    &__list {
+        margin-bottom: 25px;
+        display: flex;
+        list-style: none;
+    }
+
+    &__item {
+        position: relative;
+        padding-bottom: 8px;
+        margin-right: 36px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            border-bottom: 4px solid #B8E986;
+            border-radius: 2px;
+        }
+
+    }
+
+    &__btn {
+        font-size: 16px;
+        background: none;
+        border: none;  
+        
+        &:active {
+            color: #B8E986;
+        }
+    }
+
+}
+
+.social {
+
+    &__item {
+        margin-bottom: 24px;
+    }
+
+    &__box--facebook {
+        margin-bottom: 10px;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background: #39579A;
+    }
+
+    &__box--twitter {
+        margin-bottom: 10px;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background: #059FF5;
+    }
+
+    &__box--instagram {
+        margin-bottom: 10px;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background-image: url('../img/insta-background.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__box--linkedin {
+        margin-bottom: 10px;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background: #007EBB;
+    }
+
+    &__box--youtube {
+        margin-bottom: 10px;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background: #CE1312;
+    }
+
+    &__box--snapchat {
+        margin-bottom: 10px;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background: #FFFE00;
+
+        h2,span {
+            color: #000;
+        }
+    }
+
+    &__box--googlepluse {
+        margin-bottom: 10px;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background: #F93F2D;
+    }
+
+    &__box--vine {
+        margin-bottom: 10px;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background: #00B687;
+    }
+
+    &__svg {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    &__quantity {
+        position: absolute;
+        top: 65px;
+        left: 20px;
+        font-size: 48px;
+        text-transform: uppercase;
+        color: $color_white;
+    }
+
+    &__text {
+        position: absolute;
+        top: 120px;
+        left: 25px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $color_white;
+    }
+
+    &__number {
+        position: absolute;
+        bottom: 11px;
+        right: 10px;
+        font-size: 24px;
+        color: $color_white;
+    }
+
+    &__user {
+        display: flex;
+    }
+
+    &__avatar {
+        margin-right: 10px;
+    }
+
+    &__title {
+        display: block;
+        font-size: 13px;
+        color: #333;
+        opacity: 0.5;
+    }
+
+    &__subtitle {
+        font-size: 13px;
+        color: #333; 
+    }
+} 
+
+
+
